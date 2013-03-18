@@ -1,0 +1,1671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">193</td><td class="numi">193</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="22">storm.starter.bolt.IntermediateRankingsBoltTest</td><td><a href="#m1"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561673</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m2"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561673</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m3"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561673</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m4"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561673</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m5"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561673</td><td class="numi">82</td></tr><tr class="passedodd"><td><a href="#m6"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561756</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m7"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561756</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m8"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561756</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m9"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561756</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m10"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583561756</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m11"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561759</td><td class="numi">6</td></tr><tr class="passedodd"><td><a href="#m12"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561759</td><td class="numi">6</td></tr><tr class="passedodd"><td><a href="#m13"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561759</td><td class="numi">6</td></tr><tr class="passedodd"><td><a href="#m14"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561759</td><td class="numi">6</td></tr><tr class="passedodd"><td><a href="#m15"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561766</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m16"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561766</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m17"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561766</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m18"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583561766</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m19"><b>shouldDeclareOutputFields</b>  </a></td><td class="numi">1</td><td>1363583561768</td><td class="numi">168</td></tr><tr class="passedodd"><td><a href="#m20"><b>shouldEmitNothingIfNormalTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583561937</td><td class="numi">53</td></tr><tr class="passedodd"><td><a href="#m21"><b>shouldEmitSomethingIfTickTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583561991</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m22"><b>shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</b>  </a></td><td class="numi">1</td><td>1363583561995</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="39">storm.starter.tools.NthLastModifiedTimeTrackerTest</td><td><a href="#m23"><b>negativeOrZeroNumTimesToTrackShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562013</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m24"><b>negativeOrZeroNumTimesToTrackShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562013</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m25"><b>negativeOrZeroNumTimesToTrackShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562013</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m26"><b>negativeOrZeroNumTimesToTrackShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562013</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m27"><b>negativeOrZeroNumTimesToTrackShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562013</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m28"><b>positiveNumTimesToTrackShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562017</td><td class="numi">8</td></tr><tr class="passedeven"><td><a href="#m29"><b>positiveNumTimesToTrackShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562017</td><td class="numi">8</td></tr><tr class="passedeven"><td><a href="#m30"><b>positiveNumTimesToTrackShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562017</td><td class="numi">8</td></tr><tr class="passedeven"><td><a href="#m31"><b>positiveNumTimesToTrackShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562017</td><td class="numi">8</td></tr><tr class="passedeven"><td><a href="#m32"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m33"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m34"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m35"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m36"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m37"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m38"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m39"><b>shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</b>  </a></td><td class="numi">8</td><td>1363583562026</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m40"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m41"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m42"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m43"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m44"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m45"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m46"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m47"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m48"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m49"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m50"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m51"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m52"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m53"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m54"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m55"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m56"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m57"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m58"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m59"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m60"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr><tr class="passedeven"><td><a href="#m61"><b>shouldReturnCorrectModifiedTimeWhenMarkedAsModified</b>  </a></td><td class="numi">22</td><td>1363583562033</td><td class="numi">26</td></tr>
+<tr class="passedodd"><td rowspan="45">storm.starter.tools.RankableObjectWithFieldsTest</td><td><a href="#m62"><b>constructorWithNegativeCountAndFieldsShouldThrowIAE</b>  </a></td><td class="numi">1</td><td>1363583562059</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m63"><b>constructorWithNegativeCountAndNoFieldsShouldThrowIAE</b>  </a></td><td class="numi">1</td><td>1363583562061</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m64"><b>constructorWithNullObjectAndFieldsShouldThrowIAE</b>  </a></td><td class="numi">1</td><td>1363583562061</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m65"><b>constructorWithNullObjectAndNoFieldsShouldThrowIAE</b>  </a></td><td class="numi">1</td><td>1363583562063</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m66"><b>fieldsShouldBeImmutable</b>  </a></td><td class="numi">1</td><td>1363583562064</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m67"><b>shouldBeEqualToItself</b>  </a></td><td class="numi">1</td><td>1363583562065</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m68"><b>shouldBeEqualToTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562071</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m69"><b>shouldBeEqualToTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562071</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m70"><b>shouldBeEqualToTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562071</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m71"><b>shouldCreateRankableObjectFromTuple</b>  </a></td><td class="numi">1</td><td>1363583562096</td><td class="numi">7</td></tr><tr class="passedodd"><td><a href="#m72"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m73"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m74"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m75"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m76"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m77"><b>shouldHaveDifferentHashCodeThanFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562106</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m78"><b>shouldHaveSameHashCodeAsTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562110</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m79"><b>shouldHaveSameHashCodeAsTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562110</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m80"><b>shouldHaveSameHashCodeAsTrueDuplicates</b>  </a></td><td class="numi">3</td><td>1363583562110</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m81"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m82"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m83"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m84"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m85"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m86"><b>shouldNotBeEqualToFalseDuplicates</b>  </a></td><td class="numi">6</td><td>1363583562113</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m87"><b>shouldNotBeEqualToInstancesOfOtherClasses</b>  </a></td><td class="numi">4</td><td>1363583562118</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m88"><b>shouldNotBeEqualToInstancesOfOtherClasses</b>  </a></td><td class="numi">4</td><td>1363583562118</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m89"><b>shouldNotBeEqualToInstancesOfOtherClasses</b>  </a></td><td class="numi">4</td><td>1363583562118</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m90"><b>shouldNotBeEqualToInstancesOfOtherClasses</b>  </a></td><td class="numi">4</td><td>1363583562118</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m91"><b>shouldReturnTheCount</b>  </a></td><td class="numi">1</td><td>1363583562119</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m92"><b>shouldReturnTheFields</b>  </a></td><td class="numi">2</td><td>1363583562122</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m93"><b>shouldReturnTheFields</b>  </a></td><td class="numi">2</td><td>1363583562122</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m94"><b>shouldReturnTheObject</b>  </a></td><td class="numi">1</td><td>1363583562123</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m95"><b>toStringShouldContainStringRepresentationsOfObjectAndCount</b>  </a></td><td class="numi">2</td><td>1363583562125</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m96"><b>toStringShouldContainStringRepresentationsOfObjectAndCount</b>  </a></td><td class="numi">2</td><td>1363583562125</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m97"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m98"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m99"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m100"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m101"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m102"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m103"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m104"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m105"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m106"><b>verifyCompareTo</b>  </a></td><td class="numi">10</td><td>1363583562131</td><td class="numi">4</td></tr>
+<tr class="passedeven"><td rowspan="30">storm.starter.tools.RankingsTest</td><td><a href="#m107"><b>constructorWithNegativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">4</td><td>1363583562137</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m108"><b>constructorWithNegativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">4</td><td>1363583562137</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m109"><b>constructorWithNegativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">4</td><td>1363583562137</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m110"><b>constructorWithNegativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">4</td><td>1363583562137</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m111"><b>constructorWithPositiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562141</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m112"><b>constructorWithPositiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562141</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m113"><b>constructorWithPositiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562141</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m114"><b>constructorWithPositiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562141</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m115"><b>defaultConstructorShouldSetPositiveTopN</b>  </a></td><td class="numi">1</td><td>1363583562142</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m116"><b>shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562155</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m117"><b>shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562155</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m118"><b>shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562155</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m119"><b>shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562155</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m120"><b>shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562158</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m121"><b>shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562158</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m122"><b>shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562158</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m123"><b>shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562158</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m124"><b>shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562161</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m125"><b>shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562161</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m126"><b>shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562161</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m127"><b>shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</b>  </a></td><td class="numi">4</td><td>1363583562161</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m128"><b>shouldCorrectlyRankWhenUpdatedWithRankables</b>  </a></td><td class="numi">4</td><td>1363583562164</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m129"><b>shouldCorrectlyRankWhenUpdatedWithRankables</b>  </a></td><td class="numi">4</td><td>1363583562164</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m130"><b>shouldCorrectlyRankWhenUpdatedWithRankables</b>  </a></td><td class="numi">4</td><td>1363583562164</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m131"><b>shouldCorrectlyRankWhenUpdatedWithRankables</b>  </a></td><td class="numi">4</td><td>1363583562164</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m132"><b>shouldHaveDefaultConstructor</b>  </a></td><td class="numi">1</td><td>1363583562166</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m133"><b>shouldNotRankDuplicateObjectsMoreThanOnce</b>  </a></td><td class="numi">2</td><td>1363583562168</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m134"><b>shouldNotRankDuplicateObjectsMoreThanOnce</b>  </a></td><td class="numi">2</td><td>1363583562168</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m135"><b>sizeOfRankingsShouldNotGrowBeyondTopN</b>  </a></td><td class="numi">2</td><td>1363583562170</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m136"><b>sizeOfRankingsShouldNotGrowBeyondTopN</b>  </a></td><td class="numi">2</td><td>1363583562170</td><td class="numi">3</td></tr>
+<tr class="passedodd"><td rowspan="4">storm.starter.bolt.RollingCountBoltTest</td><td><a href="#m137"><b>shouldDeclareOutputFields</b>  </a></td><td class="numi">1</td><td>1363583562173</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m138"><b>shouldEmitNothingIfNoObjectHasBeenCountedYetAndTickTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583562176</td><td class="numi">59</td></tr><tr class="passedodd"><td><a href="#m139"><b>shouldEmitSomethingIfAtLeastOneObjectWasCountedAndTickTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583562235</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m140"><b>shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</b>  </a></td><td class="numi">1</td><td>1363583562239</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="15">storm.starter.tools.SlidingWindowCounterTest</td><td><a href="#m141"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m142"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m143"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m144"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m145"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m146"><b>lessThanTwoSlotsShouldThrowIAE</b>  </a></td><td class="numi">6</td><td>1363583562240</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m147"><b>newInstanceShouldHaveEmptyCounts</b>  </a></td><td class="numi">1</td><td>1363583562242</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m148"><b>testCounterWithSimulatedRuns</b>  </a></td><td class="numi">5</td><td>1363583562243</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m149"><b>testCounterWithSimulatedRuns</b>  </a></td><td class="numi">5</td><td>1363583562243</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m150"><b>testCounterWithSimulatedRuns</b>  </a></td><td class="numi">5</td><td>1363583562243</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m151"><b>testCounterWithSimulatedRuns</b>  </a></td><td class="numi">5</td><td>1363583562243</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m152"><b>testCounterWithSimulatedRuns</b>  </a></td><td class="numi">5</td><td>1363583562243</td><td class="numi">3</td></tr><tr class="passedeven"><td><a href="#m153"><b>twoOrMoreSlotsShouldBeValid</b>  </a></td><td class="numi">3</td><td>1363583562247</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m154"><b>twoOrMoreSlotsShouldBeValid</b>  </a></td><td class="numi">3</td><td>1363583562247</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m155"><b>twoOrMoreSlotsShouldBeValid</b>  </a></td><td class="numi">3</td><td>1363583562247</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="16">storm.starter.tools.SlotBasedCounterTest</td><td><a href="#m156"><b>negativeOrZeroNumSlotsShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562248</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m157"><b>negativeOrZeroNumSlotsShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562248</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m158"><b>negativeOrZeroNumSlotsShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562248</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m159"><b>negativeOrZeroNumSlotsShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562248</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m160"><b>negativeOrZeroNumSlotsShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562248</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m161"><b>newInstanceShouldHaveEmptyCounts</b>  </a></td><td class="numi">1</td><td>1363583562250</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m162"><b>positiveNumSlotsShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562251</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m163"><b>positiveNumSlotsShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562251</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m164"><b>positiveNumSlotsShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562251</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m165"><b>positiveNumSlotsShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562251</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m166"><b>shouldIncrementCount</b>  </a></td><td class="numi">1</td><td>1363583562253</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m167"><b>shouldIncrementCountOnlyOneSlotAtATime</b>  </a></td><td class="numi">1</td><td>1363583562254</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m168"><b>shouldReturnNonEmptyCountsWhenAtLeastOneObjectWasCounted</b>  </a></td><td class="numi">1</td><td>1363583562254</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m169"><b>shouldReturnZeroForNonexistentObject</b>  </a></td><td class="numi">1</td><td>1363583562254</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m170"><b>wipeSlotShouldSetAllCountsInSlotToZero</b>  </a></td><td class="numi">1</td><td>1363583562255</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m171"><b>wipeZerosShouldRemoveAnyObjectsWithZeroTotalCount</b>  </a></td><td class="numi">1</td><td>1363583562255</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="22">storm.starter.bolt.TotalRankingsBoltTest</td><td><a href="#m172"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562256</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m173"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562256</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m174"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562256</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m175"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562256</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m176"><b>negativeOrZeroEmitFrequencyShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562256</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m177"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562259</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m178"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562259</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m179"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562259</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m180"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562259</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m181"><b>negativeOrZeroTopNShouldThrowIAE</b>  </a></td><td class="numi">5</td><td>1363583562259</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m182"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562262</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m183"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562262</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m184"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562262</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m185"><b>positiveEmitFrequencyShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562262</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m186"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562264</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m187"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562264</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m188"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562264</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m189"><b>positiveTopNShouldBeOk</b>  </a></td><td class="numi">4</td><td>1363583562264</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m190"><b>shouldDeclareOutputFields</b>  </a></td><td class="numi">1</td><td>1363583562266</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m191"><b>shouldEmitNothingIfNormalTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583562266</td><td class="numi">10</td></tr><tr class="passedeven"><td><a href="#m192"><b>shouldEmitSomethingIfTickTupleIsReceived</b>  </a></td><td class="numi">1</td><td>1363583562277</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m193"><b>shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</b>  </a></td><td class="numi">1</td><td>1363583562278</td><td class="numi">1</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">storm.starter.tools.RankableObjectWithFieldsTest:constructorWithNullObjectAndNoFieldsShouldThrowIAE</h2>
+<div style="padding-left:3em">
+<p>The object must not be null</p>
+storm.starter.tools.RankableObjectWithFields.&lt;init&gt;(RankableObjectWithFields.java:26)
+<br/>at storm.starter.tools.RankableObjectWithFieldsTest.constructorWithNullObjectAndNoFieldsShouldThrowIAE(RankableObjectWithFieldsTest.java:30)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[A|1]]</td>
+<td>[[A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">storm.starter.tools.RankableObjectWithFieldsTest:toStringShouldContainStringRepresentationsOfObjectAndCount</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>BAR</td>
+<td>8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [F|6], [A|1], [C|3], [D|4], [E|5]]</td>
+<td>[[F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">storm.starter.bolt.IntermediateRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">storm.starter.tools.SlidingWindowCounterTest:twoOrMoreSlotsShouldBeValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|1000]</td>
+<td>[bar|0]</td>
+<td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">storm.starter.tools.RankableObjectWithFieldsTest:shouldBeEqualToTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -1)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:25)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(TotalRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|1000]</td>
+<td>-1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">storm.starter.bolt.IntermediateRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">storm.starter.tools.SlotBasedCounterTest:shouldIncrementCountOnlyOneSlotAtATime</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">storm.starter.bolt.TotalRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">storm.starter.tools.NthLastModifiedTimeTrackerTest:negativeOrZeroNumTimesToTrackShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>numTimesToTrack must be greater than zero (you requested 0)</p>
+storm.starter.tools.NthLastModifiedTimeTracker.&lt;init&gt;(NthLastModifiedTimeTracker.java:24)
+<br/>at storm.starter.tools.NthLastModifiedTimeTrackerTest.negativeOrZeroNumTimesToTrackShouldThrowIAE(NthLastModifiedTimeTrackerTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveSameHashCodeAsTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|0|someOtherField]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested 0 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:30)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(IntermediateRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToInstancesOfOtherClasses</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>java.lang.Object@2a8ddc4c</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">storm.starter.tools.SlotBasedCounterTest:newInstanceShouldHaveEmptyCounts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>1</td>
+<td>[0, 2]</td>
+<td>[0, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">storm.starter.tools.RankingsTest:sizeOfRankingsShouldNotGrowBeyondTopN</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[[A|1], [B|2], [C|3], [D|4]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithRankables</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[A|1]]</td>
+<td>[[A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>4</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[1, 2, 3, 3, 3, 3, 3]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>1</td>
+<td>[0, 1]</td>
+<td>[0, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">storm.starter.tools.RankableObjectWithFieldsTest:constructorWithNegativeCountAndFieldsShouldThrowIAE</h2>
+<div style="padding-left:3em">
+<p>The count must be &gt;= 0</p>
+storm.starter.tools.RankableObjectWithFields.&lt;init&gt;(RankableObjectWithFields.java:29)
+<br/>at storm.starter.tools.RankableObjectWithFieldsTest.constructorWithNegativeCountAndFieldsShouldThrowIAE(RankableObjectWithFieldsTest.java:47)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveSameHashCodeAsTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0|someField]</td>
+<td>[foo|0|someOtherField]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -2 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:29)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(TotalRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">storm.starter.tools.SlotBasedCounterTest:positiveNumSlotsShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">storm.starter.bolt.TotalRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested -2)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">storm.starter.tools.RankingsTest:constructorWithPositiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -10 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:30)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(IntermediateRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -2)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:26)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(IntermediateRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[0, 4]</td>
+<td>[0, 4]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">storm.starter.tools.SlidingWindowCounterTest:testCounterWithSimulatedRuns</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>3</td>
+<td>[3, 2, 0, 0, 1, 0, 0, 0]</td>
+<td>[3, 5, 5, 2, 1, 1, 1, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">storm.starter.tools.NthLastModifiedTimeTrackerTest:positiveNumTimesToTrackShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">storm.starter.tools.NthLastModifiedTimeTrackerTest:positiveNumTimesToTrackShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[|0]</td>
+<td>[|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">storm.starter.tools.RankableObjectWithFieldsTest:shouldBeEqualToTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|0|someOtherField]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[bar|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">storm.starter.bolt.TotalRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">storm.starter.bolt.TotalRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">storm.starter.tools.RankingsTest:constructorWithNegativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1</p>
+storm.starter.tools.Rankings.&lt;init&gt;(Rankings.java:23)
+<br/>at storm.starter.tools.RankingsTest.constructorWithNegativeOrZeroTopNShouldThrowIAE(RankingsTest.java:32)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -10)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:25)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(TotalRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[bar|0]</td>
+<td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">storm.starter.tools.RankingsTest:constructorWithNegativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1</p>
+storm.starter.tools.Rankings.&lt;init&gt;(Rankings.java:23)
+<br/>at storm.starter.tools.RankingsTest.constructorWithNegativeOrZeroTopNShouldThrowIAE(RankingsTest.java:32)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">storm.starter.bolt.IntermediateRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">storm.starter.tools.SlidingWindowCounterTest:twoOrMoreSlotsShouldBeValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">storm.starter.tools.RankingsTest:constructorWithNegativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1</p>
+storm.starter.tools.Rankings.&lt;init&gt;(Rankings.java:23)
+<br/>at storm.starter.tools.RankingsTest.constructorWithNegativeOrZeroTopNShouldThrowIAE(RankingsTest.java:32)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|1000]</td>
+<td>[foo|0]</td>
+<td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[G|7], [B|2], [F|6], [A|1], [C|3], [D|4], [E|5], [H|8]]</td>
+<td>[[H|8], [G|7], [F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -3 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:29)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(TotalRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">storm.starter.tools.SlotBasedCounterTest:positiveNumSlotsShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">storm.starter.tools.SlotBasedCounterTest:positiveNumSlotsShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">storm.starter.tools.RankableObjectWithFieldsTest:fieldsShouldBeImmutable</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.google.common.collect.ImmutableList.remove(ImmutableList.java:461)
+<br/>at storm.starter.tools.RankableObjectWithFieldsTest.fieldsShouldBeImmutable(RankableObjectWithFieldsTest.java:202)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">storm.starter.tools.SlotBasedCounterTest:shouldIncrementCount</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo, bar]</td>
+<td>[3, 2]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">storm.starter.bolt.TotalRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">storm.starter.bolt.IntermediateRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested 0)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:25)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(TotalRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -1 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:29)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(TotalRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">storm.starter.bolt.IntermediateRankingsBoltTest:shouldEmitSomethingIfTickTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">storm.starter.tools.RankingsTest:constructorWithPositiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">storm.starter.tools.SlidingWindowCounterTest:testCounterWithSimulatedRuns</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[3, 2, 0, 0, 1, 0, 0, 0]</td>
+<td>[3, 5, 2, 0, 1, 1, 0, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">storm.starter.bolt.IntermediateRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">storm.starter.tools.NthLastModifiedTimeTrackerTest:positiveNumTimesToTrackShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">storm.starter.bolt.TotalRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">storm.starter.tools.RankingsTest:shouldHaveDefaultConstructor</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">storm.starter.tools.RankableObjectWithFieldsTest:shouldBeEqualToItself</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>3</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+<td>[2, 4, 4, 4, 4, 4, 4]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -1)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:26)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(IntermediateRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">storm.starter.bolt.IntermediateRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>3</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[1, 3, 5, 7, 9, 11, 13]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">storm.starter.tools.SlidingWindowCounterTest:testCounterWithSimulatedRuns</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>4</td>
+<td>[3, 2, 0, 0, 1, 0, 0, 0]</td>
+<td>[3, 5, 5, 5, 3, 1, 1, 1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">storm.starter.tools.SlidingWindowCounterTest:newInstanceShouldHaveEmptyCounts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[G|7], [B|2], [F|6], [A|1], [C|3], [D|4], [E|5], [H|8]]</td>
+<td>[[H|8], [G|7], [F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m81">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested 0)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:26)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(IntermediateRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithRankables</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [D|4], [A|1], [C|3]]</td>
+<td>[[D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -3)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:26)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(IntermediateRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>6</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+<td>[2, 4, 6, 8, 10, 10, 10]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -3)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:25)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(TotalRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>4</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested -1)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">storm.starter.bolt.IntermediateRankingsBoltTest:shouldDeclareOutputFields</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m89">storm.starter.tools.RankableObjectWithFieldsTest:shouldReturnTheCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m90">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[FOO|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m91">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[[A|1], [C|3]]</td>
+<td>[[B|2], [D|4]]</td>
+<td>[[D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m92">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m93">storm.starter.tools.SlotBasedCounterTest:shouldReturnZeroForNonexistentObject</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m94">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m95">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -1 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:30)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(IntermediateRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m96">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>5</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+<td>[2, 4, 6, 8, 8, 8, 8]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m97">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[FOO|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m98">storm.starter.bolt.TotalRankingsBoltTest:shouldEmitNothingIfNormalTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m99">storm.starter.bolt.RollingCountBoltTest:shouldEmitNothingIfNoObjectHasBeenCountedYetAndTickTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m100">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToInstancesOfOtherClasses</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[7, 8, 9]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m101">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>1</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[0, 0, 0, 0, 0, 0, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m102">storm.starter.tools.RankingsTest:constructorWithPositiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1000</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m103">storm.starter.bolt.IntermediateRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>20</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m104">storm.starter.bolt.TotalRankingsBoltTest:shouldEmitSomethingIfTickTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m105">storm.starter.bolt.IntermediateRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m106">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToInstancesOfOtherClasses</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>4</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m107">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>4</td>
+<td>[2, 2, 2, 2, 2, 2, 2]</td>
+<td>[2, 4, 6, 6, 6, 6, 6]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m108">storm.starter.tools.NthLastModifiedTimeTrackerTest:negativeOrZeroNumTimesToTrackShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>numTimesToTrack must be greater than zero (you requested -1)</p>
+storm.starter.tools.NthLastModifiedTimeTracker.&lt;init&gt;(NthLastModifiedTimeTracker.java:24)
+<br/>at storm.starter.tools.NthLastModifiedTimeTrackerTest.negativeOrZeroNumTimesToTrackShouldThrowIAE(NthLastModifiedTimeTrackerTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m109">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>5</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[1, 3, 6, 10, 14, 18, 22]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m110">storm.starter.tools.SlotBasedCounterTest:negativeOrZeroNumSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Number of slots must be greater than zero (you requested -1)</p>
+storm.starter.tools.SlotBasedCounter.&lt;init&gt;(SlotBasedCounter.java:26)
+<br/>at storm.starter.tools.SlotBasedCounterTest.negativeOrZeroNumSlotsShouldThrowIAE(SlotBasedCounterTest.java:23)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m111">storm.starter.tools.RankableObjectWithFieldsTest:shouldCreateRankableObjectFromTuple</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m112">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -10)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:26)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(IntermediateRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m113">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested 0)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m114">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [F|6], [A|1], [C|3], [D|4], [E|5]]</td>
+<td>[[F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m115">storm.starter.tools.RankableObjectWithFieldsTest:toStringShouldContainStringRepresentationsOfObjectAndCount</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>foo</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m116">storm.starter.tools.SlotBasedCounterTest:wipeSlotShouldSetAllCountsInSlotToZero</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m117">storm.starter.tools.SlotBasedCounterTest:negativeOrZeroNumSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Number of slots must be greater than zero (you requested -3)</p>
+storm.starter.tools.SlotBasedCounter.&lt;init&gt;(SlotBasedCounter.java:26)
+<br/>at storm.starter.tools.SlotBasedCounterTest.negativeOrZeroNumSlotsShouldThrowIAE(SlotBasedCounterTest.java:23)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m118">storm.starter.tools.NthLastModifiedTimeTrackerTest:negativeOrZeroNumTimesToTrackShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>numTimesToTrack must be greater than zero (you requested -10)</p>
+storm.starter.tools.NthLastModifiedTimeTracker.&lt;init&gt;(NthLastModifiedTimeTracker.java:24)
+<br/>at storm.starter.tools.NthLastModifiedTimeTrackerTest.negativeOrZeroNumTimesToTrackShouldThrowIAE(NthLastModifiedTimeTrackerTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m119">storm.starter.bolt.TotalRankingsBoltTest:positiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m120">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveSameHashCodeAsTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m121">storm.starter.tools.RankableObjectWithFieldsTest:shouldReturnTheObject</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m122">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>10</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m123">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [D|4], [A|1], [C|3]]</td>
+<td>[[D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m124">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -2 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:30)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(IntermediateRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m125">storm.starter.tools.RankingsTest:constructorWithPositiveTopNShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1000000</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m126">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested 0 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:29)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(TotalRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m127">storm.starter.tools.SlotBasedCounterTest:positiveNumSlotsShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m128">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m129">storm.starter.tools.SlidingWindowCounterTest:testCounterWithSimulatedRuns</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>5</td>
+<td>[3, 11, 5, 13, 7, 17, 0, 3, 50, 600, 7000]</td>
+<td>[3, 14, 19, 32, 39, 53, 42, 40, 77, 670, 7653]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m130">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithRankables</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[G|7], [B|2], [F|6], [A|1], [C|3], [D|4], [E|5], [H|8]]</td>
+<td>[[H|8], [G|7], [F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m131">storm.starter.tools.NthLastModifiedTimeTrackerTest:negativeOrZeroNumTimesToTrackShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>numTimesToTrack must be greater than zero (you requested -3)</p>
+storm.starter.tools.NthLastModifiedTimeTracker.&lt;init&gt;(NthLastModifiedTimeTracker.java:24)
+<br/>at storm.starter.tools.NthLastModifiedTimeTrackerTest.negativeOrZeroNumTimesToTrackShouldThrowIAE(NthLastModifiedTimeTrackerTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m132">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m133">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1 (you requested -2)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:46)
+<br/>at storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:41)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:25)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroTopNShouldThrowIAE(TotalRankingsBoltTest.java:47)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m134">storm.starter.bolt.RollingCountBoltTest:shouldDeclareOutputFields</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m135">storm.starter.bolt.TotalRankingsBoltTest:positiveEmitFrequencyShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m136">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [D|4], [A|1], [C|3]]</td>
+<td>[[D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m137">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>3</td>
+<td>[1, 2, 3]</td>
+<td>[1, 3, 5]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m138">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested -10)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m139">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[2, 2]</td>
+<td>[2, 2]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m140">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>3</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[1, 2, 2, 2, 2, 2, 2]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m141">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>6</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[1, 3, 6, 10, 15, 20, 25]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m142">storm.starter.tools.RankingsTest:sizeOfRankingsShouldNotGrowBeyondTopN</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>2</td>
+<td>[[A|1], [B|2], [C|3]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m143">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithRankables</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[B|2], [F|6], [A|1], [C|3], [D|4], [E|5]]</td>
+<td>[[F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m144">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[bar|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m145">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[[A|1]]</td>
+<td>[[A|1]]</td>
+<td>[[A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m146">storm.starter.tools.RankableObjectWithFieldsTest:shouldReturnTheFields</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>quux</td>
+<td>42</td>
+<td>[one, two, three]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m147">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[|0]</td>
+<td>[|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m148">storm.starter.tools.SlotBasedCounterTest:negativeOrZeroNumSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Number of slots must be greater than zero (you requested -2)</p>
+storm.starter.tools.SlotBasedCounter.&lt;init&gt;(SlotBasedCounter.java:26)
+<br/>at storm.starter.tools.SlotBasedCounterTest.negativeOrZeroNumSlotsShouldThrowIAE(SlotBasedCounterTest.java:23)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m149">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>6</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[1, 2, 3, 4, 5, 5, 5]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m150">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[bar|1]</td>
+<td>-1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m151">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[[G|7], [B|2], [F|6], [A|1], [C|3]]</td>
+<td>[[D|4], [E|5], [H|8]]</td>
+<td>[[H|8], [G|7], [F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m152">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|0]</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m153">storm.starter.tools.RankingsTest:constructorWithNegativeOrZeroTopNShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>topN must be &gt;= 1</p>
+storm.starter.tools.Rankings.&lt;init&gt;(Rankings.java:23)
+<br/>at storm.starter.tools.RankingsTest.constructorWithNegativeOrZeroTopNShouldThrowIAE(RankingsTest.java:32)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m154">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeEvenWhenNotYetMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m155">storm.starter.tools.NthLastModifiedTimeTrackerTest:negativeOrZeroNumTimesToTrackShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-2</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>numTimesToTrack must be greater than zero (you requested -2)</p>
+storm.starter.tools.NthLastModifiedTimeTracker.&lt;init&gt;(NthLastModifiedTimeTracker.java:24)
+<br/>at storm.starter.tools.NthLastModifiedTimeTrackerTest.negativeOrZeroNumTimesToTrackShouldThrowIAE(NthLastModifiedTimeTrackerTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m156">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>4</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[1, 3, 6, 9, 12, 15, 18]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m157">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested -3)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m158">storm.starter.tools.SlidingWindowCounterTest:twoOrMoreSlotsShouldBeValid</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m159">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>5</td>
+<td>[1, 1, 1, 1, 1, 1, 1]</td>
+<td>[1, 2, 3, 4, 4, 4, 4]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m160">storm.starter.bolt.TotalRankingsBoltTest:shouldDeclareOutputFields</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m161">storm.starter.tools.RankableObjectWithFieldsTest:shouldReturnTheFields</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>java.lang.Object@5d2aea3e</td>
+<td>271</td>
+<td>[someAdditionalField]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m162">storm.starter.tools.RankableObjectWithFieldsTest:shouldBeEqualToTrueDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|0|someField]</td>
+<td>[foo|0|someOtherField]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m163">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[|1]</td>
+<td>[bar|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m164">storm.starter.bolt.TotalRankingsBoltTest:shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m165">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenUpdatedWithEmptyOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[[A|1]]</td>
+<td>[[A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m166">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[foo|1]</td>
+<td>-1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m167">storm.starter.tools.SlotBasedCounterTest:negativeOrZeroNumSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Number of slots must be greater than zero (you requested 0)</p>
+storm.starter.tools.SlotBasedCounter.&lt;init&gt;(SlotBasedCounter.java:26)
+<br/>at storm.starter.tools.SlotBasedCounterTest.negativeOrZeroNumSlotsShouldThrowIAE(SlotBasedCounterTest.java:23)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m168">storm.starter.tools.RankingsTest:shouldNotRankDuplicateObjectsMoreThanOnce</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[[A|1], [A|2], [A|3]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m169">storm.starter.tools.SlotBasedCounterTest:shouldReturnNonEmptyCountsWhenAtLeastOneObjectWasCounted</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m170">storm.starter.tools.NthLastModifiedTimeTrackerTest:positiveNumTimesToTrackShouldBeOk</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m171">storm.starter.bolt.IntermediateRankingsBoltTest:shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m172">storm.starter.bolt.TotalRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -10 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.TotalRankingsBolt.&lt;init&gt;(TotalRankingsBolt.java:29)
+<br/>at storm.starter.bolt.TotalRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(TotalRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m173">storm.starter.tools.SlidingWindowCounterTest:testCounterWithSimulatedRuns</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>5</td>
+<td>[3, 2, 0, 0, 1, 0, 0, 0]</td>
+<td>[3, 5, 5, 5, 6, 3, 1, 1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m174">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[Foo|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m175">storm.starter.bolt.RollingCountBoltTest:shouldEmitSomethingIfAtLeastOneObjectWasCountedAndTickTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m176">storm.starter.tools.RankableObjectWithFieldsTest:constructorWithNegativeCountAndNoFieldsShouldThrowIAE</h2>
+<div style="padding-left:3em">
+<p>The count must be &gt;= 0</p>
+storm.starter.tools.RankableObjectWithFields.&lt;init&gt;(RankableObjectWithFields.java:29)
+<br/>at storm.starter.tools.RankableObjectWithFieldsTest.constructorWithNegativeCountAndNoFieldsShouldThrowIAE(RankableObjectWithFieldsTest.java:41)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m177">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[bar|1000]</td>
+<td>-1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m178">storm.starter.bolt.IntermediateRankingsBoltTest:shouldEmitNothingIfNormalTupleIsReceived</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m179">storm.starter.tools.NthLastModifiedTimeTrackerTest:shouldReturnCorrectModifiedTimeWhenMarkedAsModified</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>1</td>
+<td>[1, 2, 3, 4, 5, 6, 7]</td>
+<td>[0, 0, 0, 0, 0, 0, 0]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m180">storm.starter.bolt.IntermediateRankingsBoltTest:negativeOrZeroEmitFrequencyShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-3</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The emit frequency must be &gt;= 1 seconds (you requested -3 seconds)</p>
+storm.starter.bolt.AbstractRankerBolt.&lt;init&gt;(AbstractRankerBolt.java:49)
+<br/>at storm.starter.bolt.IntermediateRankingsBolt.&lt;init&gt;(IntermediateRankingsBolt.java:30)
+<br/>at storm.starter.bolt.IntermediateRankingsBoltTest.negativeOrZeroEmitFrequencyShouldThrowIAE(IntermediateRankingsBoltTest.java:57)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m181">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[foo|0]</td>
+<td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m182">storm.starter.tools.RankableObjectWithFieldsTest:verifyCompareTo</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[foo|0]</td>
+<td>[bar|0]</td>
+<td>0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m183">storm.starter.tools.RankableObjectWithFieldsTest:shouldHaveDifferentHashCodeThanFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[foo|1]</td>
+<td>[Foo|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m184">storm.starter.bolt.RollingCountBoltTest:shouldSetTickTupleFrequencyInComponentConfigurationToNonZeroValue</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m185">storm.starter.tools.RankingsTest:defaultConstructorShouldSetPositiveTopN</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m186">storm.starter.tools.RankingsTest:shouldNotRankDuplicateObjectsMoreThanOnce</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[[someObject|42], [someObject|42], [someObject|42]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m187">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToFalseDuplicates</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[|1]</td>
+<td>[bar|1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m188">storm.starter.tools.RankableObjectWithFieldsTest:constructorWithNullObjectAndFieldsShouldThrowIAE</h2>
+<div style="padding-left:3em">
+<p>The object must not be null</p>
+storm.starter.tools.RankableObjectWithFields.&lt;init&gt;(RankableObjectWithFields.java:26)
+<br/>at storm.starter.tools.RankableObjectWithFieldsTest.constructorWithNullObjectAndFieldsShouldThrowIAE(RankableObjectWithFieldsTest.java:36)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m189">storm.starter.tools.SlidingWindowCounterTest:lessThanTwoSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>1</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Window length in slots must be at least two (you requested 1)</p>
+storm.starter.tools.SlidingWindowCounter.&lt;init&gt;(SlidingWindowCounter.java:63)
+<br/>at storm.starter.tools.SlidingWindowCounterTest.lessThanTwoSlotsShouldThrowIAE(SlidingWindowCounterTest.java:22)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m190">storm.starter.tools.RankingsTest:shouldCorrectlyRankWhenNotEmptyAndUpdatedWithOtherRankings</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>[[B|2], [F|6], [A|1]]</td>
+<td>[[C|3], [D|4], [E|5]]</td>
+<td>[[F|6], [E|5], [D|4], [C|3], [B|2], [A|1]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m191">storm.starter.tools.SlotBasedCounterTest:negativeOrZeroNumSlotsShouldThrowIAE</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>-10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Number of slots must be greater than zero (you requested -10)</p>
+storm.starter.tools.SlotBasedCounter.&lt;init&gt;(SlotBasedCounter.java:26)
+<br/>at storm.starter.tools.SlotBasedCounterTest.negativeOrZeroNumSlotsShouldThrowIAE(SlotBasedCounterTest.java:23)
+<br/>35 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m192">storm.starter.tools.RankableObjectWithFieldsTest:shouldNotBeEqualToInstancesOfOtherClasses</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>foo</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m193">storm.starter.tools.SlotBasedCounterTest:wipeZerosShouldRemoveAnyObjectsWithZeroTotalCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
